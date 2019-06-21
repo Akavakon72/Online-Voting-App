@@ -1,0 +1,178 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#faa519" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custombackground"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:background="#f3f3f3"
+            android:hint="Name"
+            android:inputType="textPersonName" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextUserName"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="UserName" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextFatherName"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Father&apos;s Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextMotherName"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Mother&apos;s Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextAadhar"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Adhar Card no"
+            android:inputType="number"
+            android:maxLength="12" />
+
+        <EditText
+            android:id="@+id/editTextVoterID"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Voter Id" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Address "
+            android:inputType="textPostalAddress" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/editTextDOB"
+                android:layout_width="100dp"
+                android:layout_height="33dp"
+                android:background="#f3f3f3"
+                android:text="DOB" />
+
+            <Button
+                android:id="@+id/buttonDate"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn"
+                android:text="Select DOB" />
+        </LinearLayout>
+
+        <DatePicker
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:calendarViewShown="false"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLength="32" />
+
+        <EditText
+            android:id="@+id/editTextConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Select Security Question"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSecurityQue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3" />
+
+        <EditText
+            android:id="@+id/editTextsecqueans"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginTop="10dp"
+            android:background="#f3f3f3"
+            android:hint="answer "
+            android:inputType="textPostalAddress" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn"
+            android:text="Cancel" />
+    </LinearLayout>
+
+</ScrollView>
